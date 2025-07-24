@@ -1,0 +1,166 @@
+.services-banner {
+    width: 100vw;
+    height: 100vh;
+    min-height: 400px;
+    background-color: #f8f7ed;
+    background-image: url('/images/Services-Hero-BG-1.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+  .banner-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: transparent;
+  }
+  .banner-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: #7a9a3a;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+  }
+  .banner-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    color: #3d4327;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.7);
+  }
+  
+  .nutrition-section, .weight-section, .wellness-section, .spiritual-section {
+    width: 100%;
+    background: #fcfaef;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .nutrition-content, .weight-content, .wellness-content, .spiritual-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 2.5rem 2rem 2.5rem;
+    gap: 2.5rem;
+  }
+  .nutrition-text, .weight-text, .wellness-text, .spiritual-text {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .nutrition-title, .weight-title, .wellness-title, .spiritual-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    color: #3d4327;
+    font-weight: 400;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+  }
+  .nutrition-price, .weight-price, .wellness-price, .spiritual-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #3d4327;
+    margin-bottom: 1.2rem;
+  }
+  .nutrition-price span, .weight-price span, .wellness-price span, .spiritual-price span {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .nutrition-divider, .weight-divider, .wellness-divider, .spiritual-divider {
+    border: none;
+    border-top: 2px solid #3d4327;
+    width: 80%;
+    margin: 1.2rem 0 1.5rem 0;
+  }
+  .nutrition-feature, .weight-feature, .wellness-feature, .spiritual-feature {
+    margin-bottom: 1.2rem;
+  }
+  .feature-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #3d4327;
+    font-size: 1.08rem;
+    margin-bottom: 0.2rem;
+  }
+  .feature-desc {
+    font-family: 'Montserrat', sans-serif;
+    color: #3d4327;
+    font-size: 1rem;
+    opacity: 0.85;
+  }
+  .nutrition-btn, .weight-btn, .wellness-btn, .spiritual-btn {
+    margin-top: 2rem;
+    background: #7a9a3a;
+    color: #fff;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.8rem 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .nutrition-btn:hover, .weight-btn:hover, .wellness-btn:hover, .spiritual-btn:hover {
+    background: #5c7c2b;
+  }
+  .nutrition-image, .weight-image, .wellness-image, .spiritual-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .nutrition-image img, .weight-image img, .wellness-image img, .spiritual-image img {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 2rem;
+    object-fit: cover;
+    box-shadow: 0 4px 24px rgba(60,60,60,0.08);
+  }
+  @media (max-width: 900px) {
+    .services-banner {
+      height: 60vh;
+      min-height: 200px;
+      padding: 0;
+    }
+    .banner-title {
+      font-size: 2.2rem;
+    }
+    .banner-content {
+      padding: 0 1rem;
+      height: 60vh;
+    }
+    .nutrition-content, .weight-content, .wellness-content, .spiritual-content {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+    .nutrition-image img, .weight-image img, .wellness-image img, .spiritual-image img {
+      max-width: 100%;
+    }
+  }
+    

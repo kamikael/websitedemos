@@ -1,0 +1,28 @@
+.navbar a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar a.active {
+  color: #07c948; /* ou autre couleur active */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

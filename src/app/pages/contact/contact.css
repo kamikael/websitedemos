@@ -1,0 +1,310 @@
+/* Styles principaux pour la page de contact */
+
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 4rem;
+    background: url('/images/Contact-Hero-BG-1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+  }
+  
+  .contact-layout > *:last-child {
+    flex: 1;
+    min-width: 500px; 
+  }
+  
+  @media (max-width: 768px) {
+    .contact-layout {
+      flex-direction: column;
+      gap: 2rem;
+      padding: 0;
+    }
+    .contact-layout > *:last-child {
+      min-width: auto;
+    }
+  }
+  
+  /* Styles de la section contact */
+  .contact-section {
+    padding: 2rem 3rem 4rem 10.25rem; /* padding-top réduit */
+    max-width: 500px;
+    color: #2d5a27;
+    font-family: 'Inter', Arial, sans-serif;
+  }
+  
+  .contact-header {
+    margin-bottom: 1rem; /* réduit */
+  }
+  
+  .contact-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #4a7c59;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d5a27;
+    margin: 0;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .contact-description {
+    margin-bottom: 1.5rem; /* réduit */
+  }
+  
+  .contact-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a7c59;
+    margin: 0;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* réduit */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .contact-details .contact-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #4a7c59;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+  }
+  
+  .contact-details .contact-value {
+    font-size: 1rem;
+    color: #2d5a27;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 2rem 1.5rem;
+      max-width: 100%;
+    }
+    .contact-title {
+      font-size: 2rem;
+    }
+    .contact-description p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Styles du formulaire de contact */
+  .contact-form-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .contact-form {
+    background-color: #f9f7ef;
+    padding: 3rem 2.5rem 10.25rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    width: 530px;
+    max-width: 530px;
+    font-family: 'Inter', Arial, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2d5a27;
+    margin: 0 0 2.5rem 0;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #343f1e;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-family: Arial, sans-serif;
+    line-height: 19px;
+  }
+  
+  .required {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border: 1px solid #D5D5D5;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    line-height: 21px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #4a7c59;
+    box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.1);
+    transform: translateY(-1px);
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #999;
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+    height: auto;
+    padding: 16px;
+    line-height: 1.5;
+  }
+  
+  .error {
+    color: #e74c3c;
+    font-size: 0.75rem;
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    background-color: #5c8607;
+    color: #fdfaf1;
+    border: none;
+    padding: 0 15px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4a6d05;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(92, 134, 7, 0.4);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Message de confirmation */
+  .success-message {
+    background-color: #f9f7ef;
+    padding: 3rem 2.5rem 10.25rem 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    width: 530px;
+    max-width: 530px;
+    font-family: 'Inter', Arial, sans-serif;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+  
+  .success-icon {
+    font-size: 4rem;
+    color: #4a7c59;
+    margin-bottom: 1.5rem;
+    background: #e8f5e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .success-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #2d5a27;
+    margin: 0 0 1rem 0;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .success-text {
+    font-size: 1.1rem;
+    color: #4a7c59;
+    line-height: 1.6;
+    margin: 0 0 2rem 0;
+    max-width: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-form-section {
+      padding: 1rem;
+    }
+    .contact-form {
+      padding: 2rem;
+      margin: 1rem;
+    }
+    .form-title {
+      font-size: 1.4rem;
+    }
+  } 

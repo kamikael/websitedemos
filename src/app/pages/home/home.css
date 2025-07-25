@@ -1,0 +1,443 @@
+.navbar {
+  background-color: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 30;
+  color:darkolivegreen;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color:olivedrab;
+}
+
+.circle {
+  background-color: white;
+  color: black;
+  border: 2px solid black;    
+  border-radius: 30px;        
+  height: 60px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 20px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.ensemble {
+  position: relative;
+  background-image: url('/images/back1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  overflow: hidden;
+}
+
+
+
+.bloc {
+  position: relative;
+  padding-left: 100px;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.petit-texte {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.grand-texte {
+  font-size: 60px;
+  line-height: 1.2;
+  font-weight: 50;
+  margin-bottom: 30px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cercle {
+  background-color:yellowgreen;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+.rdv-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 60px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-widget {
+  width: 300px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.cal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cal-header .month-year {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.cal-header button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.cal-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.cal-days .day {
+  text-align: center;
+  font-weight: bold;
+  font-size: .9em;
+  color: #666;
+}
+
+.cal-days .date {
+  position: relative;
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.cal-days .date:hover {
+  background-color: #f0f0f0;
+}
+
+.cal-days .date:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: #4caf50;
+  border-radius: 2px;
+}
+
+.rdv-info {
+  flex: 1;
+  max-width: 50%;
+}
+
+.rdv-info h2 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.rdv-info h3 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color:black ;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.rdv-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color:black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-rdv {
+  padding: 12px 30px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-rdv:hover {
+  background-color: #45a049;
+}
+
+
+
+
+.titre{
+    color:rgba(0, 0, 0, 0.747);
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.sous_titre{
+    color:0,0,0,rgba(0, 0, 0, 0.747);
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+}
+
+.cercle1 {
+  background-color: white;
+  color: rgba(147, 218, 7, 0.849);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid yellowgreen;    
+  border-radius: 30px;        
+  height: 55px;
+  min-width:160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  font-size: 15px;
+  padding: 0 15px;
+}
+
+.titre_bloc1{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.911);
+    font-family:'Times New Roman', Times, serif;
+}
+
+.texte_bloc1{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.863);
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.BLOC1{
+    display: flex;
+  gap: 30px; 
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.titre_bloc2{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.911);
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.texte_bloc2{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.863);
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.cercle2{
+     background-color: white;
+  color: rgba(147, 218, 7, 0.849);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid yellowgreen;    
+  border-radius: 30px;        
+  height: 55px;
+  min-width:160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  font-size: 15px;
+  padding: 0 15px;
+
+  }
+
+
+
+    
+
+
+.cercle3{
+     background-color: white;
+  color: rgba(147, 218, 7, 0.849);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid yellowgreen;    
+  border-radius: 30px;        
+  height: 55px;
+  min-width:160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  font-size: 15px;
+  padding: 0 15px;
+
+}
+
+ .titre_bloc3{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.911);
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.texte_bloc3{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.863);
+    font-family:Arial, Helvetica, sans-serif;
+
+    
+}
+
+.BLOC2{
+  display: flex;
+  gap: 30px; 
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  }
+
+  .titre_bloc4{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.911);
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.texte_bloc4{
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.863);
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.cercle4{
+     background-color: white;
+  color: rgba(147, 218, 7, 0.849);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid yellowgreen;    
+  border-radius: 30px;        
+  height: 55px;
+  min-width:160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  font-size: 15px;
+  padding: 0 15px;
+
+}
+
+
+
+
+.coaching-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px; 
+  padding: 20px;
+}
+
+.coaching-image img {
+  width: 500px;
+  max-width: 200%;
+  border-radius: 10px;
+  margin-right: 70px;
+}
+
+.coaching-content {
+  max-width: 500px;
+  margin-left: 70px;
+}
+
+.coaching-title {
+  font-size: 50px;
+  font-weight:lighter;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.coaching-text {
+  font-size: 17px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 20px;
+}
+
+.coaching-button {
+  background-color: yellowgreen;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px solid yellowgreen;
+  border-radius: 30px;
+  height: 55px;
+  min-width: 160px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 15px;
+  cursor: pointer;
+}
